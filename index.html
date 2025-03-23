@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 Implementation Example</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>ATIKO GADGETS</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Ordered List with Roman Numerals -->
+      <section>
+        <h2>Our services inlcude:</h2>
+        <ol type="I">
+          <li>Laptop Sales</li>
+          <li>Laptop Accessories</li>
+          <li>Laptop repair</li>
+          <li>Sales of Phones</li>
+          <li>and Web design</li>
+        </ol>
+      </section>
+
+      <!-- External Image from Pexels -->
+      <section>
+        <h2>Featured Image</h2>
+        <img
+          src="https://images.pexels.com/photos/6214471/pexels-photo-6214471.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Black and White Box Beside White Metal Rack from Pexels"
+          width="400"
+          height="500"
+        />
+        <p>Image sourced from <a href="https://www.pexels.com">Pexels</a>.</p>
+      </section>
+
+      <!-- Table of 5 Contacts -->
+      <section>
+        <h2>Contact List</h2>
+        <table border="2">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Address</th>
+              <th>Mobile</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ibrahim Ademoye</td>
+              <td>
+                4,Oriade street,Off Igboefun Road,Abeokuta,Ogun State,Nigeria
+              </td>
+              <td>08071385478</td>
+              <td>Ibrahimademoye523@.com</td>
+            </tr>
+            <tr>
+              <td>Atotileto Saheed</td>
+              <td>
+                12, Oremeji Street,Off medical road, Ikeja,Lagos State,Nigeria
+              </td>
+              <td>09068125674</td>
+              <td>Atotiletosah16886@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Omonego Franca</td>
+              <td>
+                5, Audu Bale,Off Fola Agoro Street,Yaba,Lagos State,Nigeria
+              </td>
+              <td>08081674532</td>
+              <td>Omonegefranca456@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Omoyeni Olawale</td>
+              <td>
+                6,Adedosu Street,Off Otubu Bus-Stop,Agege,Lagos State,Nigeria
+              </td>
+              <td>09034567890</td>
+              <td>Omoyeniolawale876@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Kareem Yusuf</td>
+              <td>
+                23,Adedosu Street,Off Otubu Bus-Stop,Agege,Lagos State,Nigeria
+              </td>
+              <td>09094567324</td>
+              <td>Kareemyusuf4567@gmail.com.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Registration Form -->
+      <section>
+        <h2>Registration Form</h2>
+        <form action="/submit" method="post">
+          <!-- Name Field -->
+          <div>
+            <label for="name">Full Name:</label><br />
+            <input type="text"  id="name"  name="name"   placeholder="Enter your full name" required/> 
+          </div>
+
+          <!-- Email Field -->
+          <div>
+            <label for="email">Email:</label><br />
+            <input type="email"  id="email" name="email" placeholder="example@domain.com"  required />
+          </div> 
+              
+          
+          <!-- Password Field -->
+          <div>
+            <label for="password">Password:</label><br />
+            <input  type="password" id="password" name="password"  placeholder="Enter your password"  minlength="8" required/>
+          </div>
+  
+              
+
+          <!-- Date of Birth Field -->
+          <div>
+            <label for="dob">Date of Birth:</label><br />
+            <input type="date" id="dob" name="dob" required />
+          </div>
+
+          <!-- Dropdown for Country -->
+          <div>
+            <label for="country">Country:</label><br />
+            <select id="country" name="country" required>
+              <option value="">-- Select a country --</option>
+              <option value="Nigeria">Nigeria</option>
+              <option value="Burkinafaso">Burkinafaso</option>
+              <option value="Ghana">Ghana</option>
+              <option value="Kenya">Kenya</option>
+            </select>
+          </div>
+
+          <!-- Radio Buttons for Gender -->
+          <div>
+            <label>Gender:</label><br />
+            
+            <input type="radio" id="male" name="gender" value="male" required />
+            <label for="male">Male</label>
+            
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+            
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">Other</label>
+          </div>
+
+          <!-- Checkboxes for Interests -->
+          <div>
+            <label>Interests:</label><br />
+            
+            <input type="checkbox" id="Web3" name="interests" value="Web3" />
+            <label for="Web3"> Web3</label>
+            
+            <input type="checkbox"  id="cybersecurity" name="interests"  value="cybersecurity" />
+            <label for="cybersecurity">cybersecurity</label>
+            
+            <input type="checkbox" id="Quantum Computing" name="interests" value="Quantum Computing"/>
+            <label for="Quantum Computing">Quantum Computing</label>
+          </div>
+
+          <!-- Submit Button -->
+          <div>
+            <input type="submit" value="Register" />
+          </div>
+        </form>
+      </section>
+
+      <!-- Multimedia Elements -->
+      <section>
+        <h2>Multimedia Demo</h2>
+        <!-- Audio Element -->
+        <audio controls>
+          <source
+            src="https://www.w3schools.com/html/horse.mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
+
+        <!-- Video Element -->
+        <video width="320" height="240" controls>
+          <source
+            src="https://cdn.pixabay.com/video/2019/09/20/27091-361827476_large.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video element.
+        </video>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2025 Atiko Blog Site</p>
+    </footer>
+  </body>
+</html>
